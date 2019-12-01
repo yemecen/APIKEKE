@@ -4,7 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class actor extends Model
+class Actor extends Model
 {
-    //
+    public function movies()
+    {
+        return $this->belongsToMany(movies::class,'movie_actor');
+    }
 }

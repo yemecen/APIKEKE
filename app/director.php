@@ -4,7 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class director extends Model
+class Director extends Model
 {
-    //
+    public function movies()
+    {
+        return $this->hasMany(Movie::class);
+    }
 }

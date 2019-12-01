@@ -15,7 +15,7 @@ class CreateMovieactorsTable extends Migration
     {
         Schema::create('movieactors', function (Blueprint $table) {
             $table->unsignedInteger('MovieID');
-            $table->inteunsignedIntegerger('ActorID');
+            $table->unsignedInteger('ActorID');
 
             $table->foreign('MovieID')->references('MovieID')->on('Movies');
             $table->foreign('ActorID')->references('ActorID')->on('Actors');
