@@ -2,7 +2,7 @@
 
 Database Relationship
 
-(./db.png)
+(./https://github.com/yemecen/APIKEKE/blob/master/db.png)
 
 Laravel 5.8
 Laravel API Resources
