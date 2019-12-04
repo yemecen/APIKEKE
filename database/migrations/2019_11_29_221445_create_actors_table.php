@@ -17,6 +17,8 @@ class CreateActorsTable extends Migration
             $table->increments('ActorID');
             $table->string('FirstName',200);
             $table->string('LastName',200);
+            $table->timestamps();
+
         });
     }
 

@@ -2,11 +2,11 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\genre;
+use App\Genre;
 use Faker\Generator as Faker;
 
-$factory->define(genre::class, function (Faker $faker) {
+$factory->define(Genre::class, function (Faker $faker) {
     return [
-        //
+        'GenreName' => $faker->word
     ];
 });

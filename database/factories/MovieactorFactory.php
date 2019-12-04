@@ -2,11 +2,14 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\movieactor;
+use App\MovieActor;
+use App\Movie;
+use App\Actor;
 use Faker\Generator as Faker;
 
-$factory->define(movieactor::class, function (Faker $faker) {
+$factory->define(MovieActor::class, function (Faker $faker) {
     return [
-        //
+        'MovieID' => Movie::inRandomOrder()->value('MovieID'),
+        'ActorID' => Actor::inRandomOrder()->value('ActorID')
     ];
 });

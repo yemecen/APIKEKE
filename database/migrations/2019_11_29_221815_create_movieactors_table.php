@@ -13,9 +13,10 @@ class CreateMovieactorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('movieactors', function (Blueprint $table) {
+        Schema::create('movie_actors', function (Blueprint $table) {
             $table->unsignedInteger('MovieID');
             $table->unsignedInteger('ActorID');
+            $table->timestamps();
 
             $table->foreign('MovieID')->references('MovieID')->on('Movies');
             $table->foreign('ActorID')->references('ActorID')->on('Actors');

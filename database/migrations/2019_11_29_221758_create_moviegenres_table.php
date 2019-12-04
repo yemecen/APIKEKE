@@ -13,9 +13,10 @@ class CreateMoviegenresTable extends Migration
      */
     public function up()
     {
-        Schema::create('moviegenres', function (Blueprint $table) {
+        Schema::create('movie_genres', function (Blueprint $table) {
             $table->unsignedInteger('MovieID');
             $table->unsignedInteger('GenreID');
+            $table->timestamps();
 
             $table->foreign('MovieID')->references('MovieID')->on('Movies');
             $table->foreign('GenreID')->references('GenreID')->on('Genres');

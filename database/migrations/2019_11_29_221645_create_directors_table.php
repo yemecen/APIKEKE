@@ -17,6 +17,7 @@ class CreateDirectorsTable extends Migration
             $table->increments('DirectorID');
             $table->string('FirstName',200);
             $table->string('LastName',200);
+            $table->timestamps();
         });
     }
 

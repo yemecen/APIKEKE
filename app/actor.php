@@ -8,6 +8,6 @@ class Actor extends Model
 {
     public function movies()
     {
-        return $this->belongsToMany(movies::class,'movie_actor');
+        return $this->belongsToMany(Movies::class,'MovieActor');
     }
 }

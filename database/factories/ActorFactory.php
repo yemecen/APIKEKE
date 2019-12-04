@@ -2,11 +2,12 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\actor;
+use App\Actor;
 use Faker\Generator as Faker;
 
-$factory->define(actor::class, function (Faker $faker) {
+$factory->define(Actor::class, function (Faker $faker) {
     return [
-        //
+        'FirstName' => $faker->name,
+        'LastName' => $faker->word
     ];
 });

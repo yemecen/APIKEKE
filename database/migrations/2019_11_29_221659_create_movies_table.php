@@ -20,8 +20,9 @@ class CreateMoviesTable extends Migration
             $table->unsignedInteger('GenreID');
             $table->string('Title',200);
             $table->year('ReleaseYear');
-            $table->float('Rating', 1, 1);
+            $table->integer('Rating');
             $table->integer('MovieLength');
+            $table->timestamps();
 
             $table->foreign('DirectorID')->references('DirectorID')->on('Directors');
             $table->foreign('GenreID')->references('GenreID')->on('Genres');
