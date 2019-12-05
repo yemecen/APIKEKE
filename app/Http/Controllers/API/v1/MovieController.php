@@ -13,9 +13,9 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Movie $movie)
     {
-        return new
+        return new MovieResource($movie);
     }
 
     /**
