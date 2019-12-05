@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\movieactor;
+use App\MovieActor;
 use Illuminate\Http\Request;
 
-class MovieactorController extends Controller
+class MovieaAtorController extends Controller
 {
     /**
      * Display a listing of the resource.

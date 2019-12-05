@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\actor;
+use App\Actor;
 use Illuminate\Http\Request;
 
 class ActorController extends Controller

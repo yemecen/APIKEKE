@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\moviegenre;
+use App\MovieGenre;
 use Illuminate\Http\Request;
 
-class MoviegenreController extends Controller
+class MovieGenreController extends Controller
 {
     /**
      * Display a listing of the resource.
