@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API\v1;
 
 use App\Movie;
 use Illuminate\Http\Request;
+use App\Http\Resources\v1\MovieResource;
 
 class MovieController extends Controller
 {
@@ -14,7 +15,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        //
+        return new
     }
 
     /**
