@@ -15,6 +15,6 @@ use Illuminate\Http\Request;
 
 Route::prefix('v1')->group(function(){
 
-    Route::apiResource('/movie', 'API\v1\MovieController')
-        ->only('index');
+    Route::apiResource('/movie', 'Api\v1\MovieController')
+        ->only('show');
 });

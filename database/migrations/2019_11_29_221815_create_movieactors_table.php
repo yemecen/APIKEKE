@@ -18,8 +18,8 @@ class CreateMovieactorsTable extends Migration
             $table->unsignedInteger('ActorID');
             $table->timestamps();
 
-            $table->foreign('MovieID')->references('MovieID')->on('Movies');
-            $table->foreign('ActorID')->references('ActorID')->on('Actors');
+            $table->foreign('MovieID')->references('ID')->on('Movies');
+            $table->foreign('ActorID')->references('ID')->on('Actors');
         });
     }
 

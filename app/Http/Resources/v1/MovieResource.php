@@ -14,9 +14,10 @@ class MovieResource extends JsonResource
      */
     public function toArray($request)
     {
-        return [
+        /*return [
             'Title' => $this->Title,
             'ReleaseYear' =>$this->ReleaseYear
-        ];
+        ];*/
+        return parent::toArray($request);
     }
 }

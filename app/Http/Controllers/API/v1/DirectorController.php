@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Director;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class DirectorController extends Controller
 {

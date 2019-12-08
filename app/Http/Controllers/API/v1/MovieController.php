@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\API\v1;
+namespace App\Http\Controllers\Api\v1;
 
+use App\Http\Controllers\Controller;
 use App\Movie;
 use Illuminate\Http\Request;
 use App\Http\Resources\v1\MovieResource;
@@ -13,9 +14,9 @@ class MovieController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Movie $movie)
+    public function index()
     {
-        return new MovieResource($movie);
+        
     }
 
     /**
@@ -45,9 +46,9 @@ class MovieController extends Controller
      * @param  \App\movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function show(movie $movie)
+    public function show(Movie $movie)
     {
-        //
+        return new MovieResource($movie);
     }
 
     /**
