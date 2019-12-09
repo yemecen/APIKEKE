@@ -17,4 +17,6 @@ Route::prefix('v1')->group(function(){
 
     Route::apiResource('/movie', 'Api\v1\MovieController')
         ->only('show');
+    Route::apiResource('/movies', 'Api\v1\MovieController')
+        ->only('index');
 });

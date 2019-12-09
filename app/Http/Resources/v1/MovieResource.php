@@ -20,6 +20,5 @@ class MovieResource extends JsonResource
             'ReleaseYear' => $this->ReleaseYear,
             'Rating' => $this->Rating
         ];
-        //return parent::toArray($request);
     }
 }

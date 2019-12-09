@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Movie;
 use Illuminate\Http\Request;
 use App\Http\Resources\v1\MovieResource;
+use App\Http\Resources\v1\MovieResourceCollection;
 
 class MovieController extends Controller
 {
@@ -16,7 +17,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        
+        return new MovieResourceCollection(Movie::paginate(5));
     }
 
     /**
