@@ -24,8 +24,8 @@ class CreateMoviesTable extends Migration
             $table->integer('MovieLength');
             $table->timestamps();
 
-            $table->foreign('DirectorID')->references('DirectorID')->on('Directors');
-            $table->foreign('GenreID')->references('GenreID')->on('Genres');
+            $table->foreign('DirectorID')->references('ID')->on('Directors');
+            $table->foreign('GenreID')->references('ID')->on('Genres');
             
         });
     }
