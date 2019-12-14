@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Director;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\v1\DirectorResource;
 
 class DirectorController extends Controller
 {
@@ -45,9 +46,10 @@ class DirectorController extends Controller
      * @param  \App\director  $director
      * @return \Illuminate\Http\Response
      */
-    public function show(director $director)
+    public function show(Director $director)
     {
-        //
+        return new DirectorResource($director);
+
     }
 
     /**

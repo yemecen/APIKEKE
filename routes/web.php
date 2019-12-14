@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //$movies = App\Director::find(1)->with('movies')->get();
+    $movies = App\Movie::find(1)->director;
+    //$movies = App\Director::find(1);
+    dd($movies);
 });

@@ -19,4 +19,7 @@ Route::prefix('v1')->group(function(){
         ->only('show');
     Route::apiResource('/movies', 'Api\v1\MovieController')
         ->only('index');
+
+    Route::apiResource('/director', 'Api\v1\DirectorController')
+        ->only('show');
 });
