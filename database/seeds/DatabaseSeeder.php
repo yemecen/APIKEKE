@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         factory('App\Genre', 5)->create();
         factory('App\Director', 3)->create();
         factory('App\Movie', 20)->create();
-        factory('App\MovieActor', 10)->create();
+        //factory('App\MovieActor', 10)->create();
         factory('App\MovieGenre', 10)->create();
     }
 }

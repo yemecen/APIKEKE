@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 
 $factory->define(MovieActor::class, function (Faker $faker) {
     return [
-        'MovieID' => Movie::inRandomOrder()->value('ID'),
-        'ActorID' => Actor::inRandomOrder()->value('ID')
+        'Movie_ID' => Movie::inRandomOrder()->value('ID'),
+        'Actor_ID' => Actor::inRandomOrder()->value('ID')
     ];
 });

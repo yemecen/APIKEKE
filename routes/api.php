@@ -22,4 +22,7 @@ Route::prefix('v1')->group(function(){
 
     Route::apiResource('/director', 'Api\v1\DirectorController')
         ->only('show');
+
+    Route::apiResource('/movie/{movie}/actors', 'Api\v1\ActorController')
+        ->only('show');//??
 });
